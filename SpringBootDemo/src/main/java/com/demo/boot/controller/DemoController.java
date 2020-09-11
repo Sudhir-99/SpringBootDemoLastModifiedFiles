@@ -28,6 +28,8 @@ public class DemoController {
 	static DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	static Map<Date, String> mapTree = new HashMap<Date, String>();
 	
+	
+	// http://localhost:8080/apis/getLastAccessedFiles
 	@RequestMapping(value = "/getLastAccessedFiles",method = RequestMethod.GET, produces={"application/json"})
 	public String getLastAccessedFiles() throws Exception {
 	    try {
